@@ -15,26 +15,61 @@
             <div class="card">
                 <h3 class="card-header">Search for a city:</h3>
                 <form class="card-body">
-                    <input name="city" type="text" autofocus="true"/><br>
-                    <button type="sumbit" class="btn btn-primary">Search</button>
+                    <input name="city" type="text" id="city-name" placeholder="City" autofocus="true"/><br>
+                    <button type="sumbit" id="search-button" class="btn btn-primary">Search</button>
                 </form>
             </div>
             <div id="search-history">
-                <p>placeholder</p>
+                
             </div>
         </div>
         
         <div class="col-12 col-md-8 weather">
-            <div id="select-day">
-                <h1>City</h1>
+            <div id="current-day">
+                <h1 id="city"></h1>
+                <p id="temperature"></p>
+                <p id="wind"></p>
+                <p id="humidity"></p>
+                <p id="uv-index"></p>
             </div>
-            <div id="forecast">
+            <div class="container row" id="forecast">
                 <h2>5-day forecast:</h2>
-
+                
+                    <div class="col-12 col-md-2 border border-dark">
+                        <h6 id="day-1"></h2>
+                        <p id="temp1-min"></p>
+                        <p id="temp1-max"></p>
+                        <p id="condition1"></p>
+                    </div>
+                    <div class="col-12 col-md-2 border border-dark">
+                        <h6 id="day-2"></h2>
+                        <p id="temp2-min"></p>
+                        <p id="temp2-max"></p>
+                        <p id="condition2"></p>
+                    </div>
+                    <div class="col-12 col-md-2 border border-dark">
+                        <h6 id="day-3"></h2>
+                        <p id="temp3-min"></p>
+                        <p id="temp3-max"></p>
+                        <p id="condition3"></p>
+                    </div>
+                    <div class="col-12 col-md-2 border border-dark">
+                        <h6 id="day-4"></h2>
+                        <p id="temp4-min"></p>
+                        <p id="temp4-max"></p>
+                        <p id="condition4"></p>
+                    </div>
+                    <div class="col-12 col-md-2 border border-dark">
+                        <h6 id="day-5"></h2>
+                        <p id="temp5-min"></p>
+                        <p id="temp5-max"></p>
+                        <p id="condition5"></p>
+                    </div>
             </div>
         </div>
     </main>
  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./assets/javascript/script.js"></script>
 </body>
 </html>
