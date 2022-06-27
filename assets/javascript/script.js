@@ -23,9 +23,9 @@ var getCityDetails = async function(cityName) {
         if (response.ok) {
             return response.json().then(function(data) {
                 currentDayEl.innerHTML = data.name;
-                temperature.innerHTML = data.main.temp + "F";
-                wind.innerHTML = data.wind.speed + "MPH";
-                humidity.innerHTML = data.main.humidity + "%";
+                temperature.innerHTML = "Temperature: " + data.main.temp + "F";
+                wind.innerHTML = "Windspeed: " + data.wind.speed + "MPH";
+                humidity.innerHTML = "Humidity: " + data.main.humidity + "%";
                 return data.name;
                 // displayWeather(data, city);
             });
